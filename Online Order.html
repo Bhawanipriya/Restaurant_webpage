@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+</head>
+<style>
+    .Online_Order{
+        padding: 25px 0 25px 0;
+        color: #fff;
+        background-color: rgb(15, 15, 30);
+    }
+    .Section{
+        padding: 25px 0 25px 0;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .oo_row{
+        display: flex;
+        padding: 0 100px 0 100px;
+    }
+    .oo_col{
+        box-shadow: 2px 2px 2px #bbb;
+        border: 1px solid #bbb;
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        flex: 1;
+    }
+    .oo_col h1{
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        font-family: cursive;
+    }
+    .food{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        border: 2px solid orange;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        color: rgb(0, 0, 0);
+    }
+    .cart form , input[type="button"]{
+        background-color: rgb(15, 15, 30);
+        color: rgb(222, 222, 231);
+        padding: 10px;
+        margin: 20px auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: larger;
+        text-align: center;
+        font-weight: 700;
+    }
+    form, input[type="button"]{
+        background-color: red;
+    }
+
+    form, input[type="button"]:hover{background-color: aqua;}
+</style>
+<body>
+    <div class="Online_Order">
+        <h1 class= "Section">Online Order</h1>
+        <div class="oo_row">
+            <div class ="oo_col">
+                <h1>Non-Veg Menu</h1>
+                <div class="box">
+                    <div class="food">
+                        <h2>White Sauce pasta</h2>
+                        <h3>Rs.300</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="food">
+                        <h2>Red Sauce pasta</h2>
+                        <h3>Rs.350</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="food">
+                        <h2>Chilli Chicken</h2>
+                        <h3>Rs.300</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class ="oo_col">
+                <h1>Veg Menu</h1>
+                <div class="box">
+                    <div class="food">
+                        <h2>White Sauce pasta</h2>
+                        <h3>Rs.350</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="food">
+                        <h2>Red Sauce pasta</h2>
+                        <h3>Rs.340</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="food">
+                        <h2>Chilli Paneer</h2>
+                        <h3>Rs.300</h3>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <form action="" method="post">
+                <input type="button" value="View Cart">
+                </form>
+        </div>
+    </div>
+</body>
+</html>
